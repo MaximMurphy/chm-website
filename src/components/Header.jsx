@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Translation from "@/components/Translation";
 import LanguageSelector from "@/components/LanguageSelector";
+import NavDropdown from "@/components/NavDropdown";
 
 export default function Header() {
   return (
@@ -26,24 +27,23 @@ export default function Header() {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-4 bg-white/90 text-black shadow bg-base-100 rounded-box w-fit text-lg"
           >
             <li>
-              <a>About</a>
+              <Translation translationKey="header_about" />
               <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
+                <NavDropdown />
               </ul>
             </li>
-            <li>
-              <a>Морський Табір</a>
+            <li className="text-lg">
+              <Link href="/" className="text-lg">
+                Морський Табір
+              </Link>
             </li>
             <li>
-              <a>Documents</a>
+              <Link href="/" className="text-lg">
+                Documents
+              </Link>
             </li>
           </ul>
         </div>
@@ -66,12 +66,7 @@ export default function Header() {
                 <Translation translationKey="header_about" />
               </summary>
               <ul className="p-2 bg-white/90 text-black">
-                <li>
-                  <a>Chornomortsi Emblem</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
+                <NavDropdown />
               </ul>
             </details>
           </li>
