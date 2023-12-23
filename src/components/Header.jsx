@@ -5,7 +5,7 @@ import LanguageSelector from "@/components/LanguageSelector";
 
 export default function Header() {
   return (
-    <div className="navbar bg-blue-900/10 border-b-2 border-white/50 z-50 top-0 sticky p-4 backdrop-blur-sm">
+    <div className="navbar bg-blue-900/10 border-b-2 border-blue-900/90 z-50 top-0 sticky p-4 backdrop-blur-sm">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -54,18 +54,18 @@ export default function Header() {
             height={100}
             width={75}
             quality={100}
-            className="h-16"
+            className="h-12 w-auto"
           />
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu menu-horizontal px-1 text-base">
           <li>
             <details>
               <summary>
                 <Translation translationKey="header_about" />
               </summary>
-              <ul className="p-2 bg-blue-800">
+              <ul className="p-2 bg-white/90 text-black">
                 <li>
                   <a>Chornomortsi Emblem</a>
                 </li>
@@ -82,7 +82,7 @@ export default function Header() {
       </div>
       <div className="navbar-end flex flex-row gap-4">
         <LanguageSelector />
-        <p className="btn btn-ghost">Login</p>
+        <p className="btn btn-ghost text-base">Login</p>
       </div>
     </div>
   );

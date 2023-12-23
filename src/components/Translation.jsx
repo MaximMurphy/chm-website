@@ -1,8 +1,9 @@
 import translate from "@/lib/translate";
-
-const lang = "ua";
+import { useContext, useEffect } from "react";
+import { LangContext } from "../app/page.jsx";
 
 export default function Translation({ translationKey }) {
-  //console.log("Key inside component:", translationKey);
-  return <>{translate(translationKey, lang)}</>;
+  const lang = useContext(LangContext);
+
+  return <>{translate(translationKey, lang.lang)}</>;
 }

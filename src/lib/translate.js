@@ -2,7 +2,7 @@ import en_translations from "@/translations/en.json";
 import ua_translations from "@/translations/ua.json";
 
 function getTranslations(lang) {
-  if (lang === "ua") {
+  if (lang == "ua") {
     return ua_translations;
   }
   // Default to English if the language is not specified or not supported
@@ -12,7 +12,6 @@ function getTranslations(lang) {
 export default function translate(translationKey, lang) {
   try {
     const translations = getTranslations(lang);
-    //console.log("Translations:", translations);
 
     if (translations[translationKey]) {
       return translations[translationKey];
