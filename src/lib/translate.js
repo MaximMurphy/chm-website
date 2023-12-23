@@ -12,7 +12,7 @@ function getTranslations(lang) {
 export default function translate(translationKey, lang) {
   try {
     const translations = getTranslations(lang);
-    console.log("Translations:", translations);
+    //console.log("Translations:", translations);
 
     if (translations[translationKey]) {
       return translations[translationKey];
