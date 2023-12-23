@@ -5,7 +5,7 @@ import LanguageSelector from "@/components/LanguageSelector";
 
 export default function Header() {
   return (
-    <div className="navbar bg-slate-500 z-50 top-0 sticky p-4">
+    <div className="navbar bg-blue-900/10 border-b-2 border-white/50 z-50 top-0 sticky p-4 backdrop-blur-sm">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
