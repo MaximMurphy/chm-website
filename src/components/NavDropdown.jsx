@@ -5,7 +5,7 @@ export default function NavDropdown() {
   return (
     <>
       <li>
-        <Link href="/" className="text-lg">
+        <Link href="/emblem" className="text-lg">
           <Translation translationKey="header_emblem" />
         </Link>
       </li>

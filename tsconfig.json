@@ -29,7 +29,8 @@
     ".next/types/**/*.ts",
     "src/lib/translate.js",
     "src/app/page.jsx",
-    "src/components/Translation.jsx"
+    "src/components/Translation.jsx",
+    "src/app/Providers.jsx"
   ],
   "exclude": ["node_modules"]
 }

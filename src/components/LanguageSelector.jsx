@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react";
 import { useContext } from "react";
-import { LangContext } from "../app/page.jsx";
+import { LangContext } from "../app/Providers.jsx";
 
 export default function LanguageSelector() {
   const { lang, setLang } = useContext(LangContext);
