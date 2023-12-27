@@ -19,6 +19,11 @@ export default function NavDropdown() {
           <Translation translationKey="header_orion" />
         </Link>
       </li>
+      <li>
+        <Link href="/lubko" className="text-lg">
+          <Translation translationKey="header_lubko" />
+        </Link>
+      </li>
     </>
   );
 }
