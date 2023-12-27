@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
+import Translation from "./Translation";
 
 export default function Footer() {
   return (
@@ -16,7 +17,9 @@ export default function Footer() {
         className="h-24 lg:h-48 w-auto"
       />
       <div className="flex flex-col gap-6 text-sm lg:text-base">
-        <p className="font-bold">Plast Chornomortsi - 25-ий Курінь</p>
+        <span className="font-bold">
+          <Translation translationKey="footer_title" /> - 25-ий Курінь
+        </span>
         <p>Copyright © 2024 - All right reserved</p>
 
         <nav className="flex flex-row items-center justify-between px-16">
