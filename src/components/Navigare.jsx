@@ -1,6 +1,6 @@
 export default function Navigare() {
   return (
-    <section className="flex flex-col items-center gap-12 px-48">
+    <section className="flex flex-col items-center gap-12 px-4 lg:px-48">
       <h1 className="text-5xl">Navigare Necesse Est – Vivere Non</h1>
       <div className="flex flex-col items-center gap-8 text-lg">
         <p>
