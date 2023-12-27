@@ -1,5 +1,7 @@
 import Translation from "@/components/Translation";
 import Image from "next/image";
+import Navigare from "@/components/Navigare";
+import Carousel from "@/components/Carousel";
 
 export default function Home() {
   return (
@@ -23,14 +25,15 @@ export default function Home() {
           className="h-[36rem] md:h-[40rem] lg:h-[45rem] object-cover relative brightness-90"
         />
       </div>
-      <div className="flex flex-col p-8 gap-8 text-center">
-        <h1 className="text-5xl">
-          <Translation translationKey="home_greeting" />
-        </h1>
-        <p className="text-3xl mb-12 ">
-          <Translation translationKey="home_title" />
-        </p>
-      </div>
+      <h1 className="text-5xl">
+        <Translation translationKey="home_greeting" />
+      </h1>
+      <Carousel />
+      <Navigare />
+      <p>Instagram Feed</p>
+      <p>Leadership Carousel</p>
+      <p>Water Animation?</p>
+      <p>Contact Email Link</p>
     </main>
   );
 }
