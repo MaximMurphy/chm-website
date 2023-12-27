@@ -10,12 +10,12 @@ export default function NavDropdown() {
         </Link>
       </li>
       <li>
-        <Link href="/" className="text-lg">
+        <Link href="/patron" className="text-lg">
           <Translation translationKey="header_patron" />
         </Link>
       </li>
       <li>
-        <Link href="/" className="text-lg">
+        <Link href="/orion" className="text-lg">
           <Translation translationKey="header_orion" />
         </Link>
       </li>

@@ -1,5 +1,7 @@
+"use client";
+
 import translate from "@/lib/translate";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { LangContext } from "../app/Providers.jsx";
 
 export default function Translation({ translationKey }) {

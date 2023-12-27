@@ -5,17 +5,23 @@ import { LangContext } from "../app/Providers.jsx";
 export default function LanguageSelector() {
   const { lang, setLang } = useContext(LangContext);
 
+  if (typeof window !== "undefined") {
+    const details = document.getElementById("details");
+  }
+
   const handleSelect = (selectedLang) => {
     // Update the context value with the selected language
-    //console.log(selectedLang);
+    details.removeAttribute("open");
     setLang(selectedLang);
   };
 
   return (
-    <div className="dropdown dropdown-bottom dropdown-end">
-      <div tabIndex={0} role="button" className="">
-        <Icon icon="clarity:language-line" height="36" />
-      </div>
+    <details id="details" className="dropdown dropdown-bottom dropdown-end">
+      <summary className="list-none">
+        <div tabIndex={0} role="button" className="">
+          <Icon icon="clarity:language-line" height="36" />
+        </div>
+      </summary>
       <ul
         tabIndex={0}
         className="dropdown-content bg-white/90 z-[1] menu p-2 shadow rounded-box w-fit"
@@ -35,6 +41,6 @@ export default function LanguageSelector() {
           </button>
         </li>
       </ul>
-    </div>
+    </details>
   );
 }
