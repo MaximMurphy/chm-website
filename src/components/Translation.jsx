@@ -2,7 +2,7 @@
 
 import translate from "@/lib/translate";
 import { useContext } from "react";
-import { LangContext } from "../app/Providers.jsx";
+import { LangContext } from "../app/(general)/Providers.jsx";
 
 export default function Translation({ translationKey }) {
   const lang = useContext(LangContext);

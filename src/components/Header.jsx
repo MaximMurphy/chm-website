@@ -40,7 +40,7 @@ export default function Header() {
               </ul>
             </li>
             <li className="text-lg">
-              <Link href="/" className="text-lg">
+              <Link href="/mt" className="text-lg">
                 Морський Табір
               </Link>
             </li>
@@ -76,7 +76,9 @@ export default function Header() {
             </details>
           </li>
           <li>
-            <a>Морський Табір</a>
+            <Link href="/mt" className="text-base">
+              Морський Табір
+            </Link>
           </li>
         </ul>
       </div>

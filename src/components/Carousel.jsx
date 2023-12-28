@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Carousel() {
   return (
-    <div className="w-[22rem] lg:w-[60rem] carousel lg:px-48 space-x-4 rounded-box">
-      <div className="carousel-item ">
+    <div className="w-[22rem] lg:w-[50rem] carousel carousel-center rounded-box">
+      <div className="carousel-item w-full">
         <Image
           src="/2023_rada.jpeg"
           className="rounded-box object-cover w-auto h-64 lg:h-96"
@@ -12,7 +12,7 @@ export default function Carousel() {
           height={1496}
         />
       </div>
-      <div className="carousel-item">
+      <div className="carousel-item w-full">
         <Image
           src="/2023_MVT.jpg"
           className="rounded-box object-cover w-auto h-64 lg:h-96"
@@ -21,7 +21,7 @@ export default function Carousel() {
           height={4000}
         />
       </div>
-      <div className="carousel-item">
+      <div className="carousel-item w-full">
         <Image
           src="/2023_rada_chm.jpg"
           className="rounded-box object-cover w-auto h-64 lg:h-96"

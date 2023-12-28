@@ -28,9 +28,9 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/lib/translate.js",
-    "src/app/page.jsx",
+    "src/app/(general)/page.jsx",
     "src/components/Translation.jsx",
-    "src/app/Providers.jsx"
+    "src/app/(general)/Providers.jsx"
   ],
   "exclude": ["node_modules"]
 }
