@@ -1,6 +1,6 @@
 export default function Navigare() {
   return (
-    <section className="flex flex-col gap-6 w-fit lg:w-[50rem] py-4 lg:py-12 px-8">
+    <section className="flex flex-col gap-6 w-fit">
       <h1 className="text-3xl lg:text-4xl">
         Navigare Necesse Est – Vivere Non
       </h1>

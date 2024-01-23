@@ -1,6 +1,6 @@
 export default function HomeInfo() {
   return (
-    <div className="flex flex-col gap-8 w-fit lg:w-[50rem] py-4 lg:py-12 px-8 text-lg">
+    <div className="flex flex-col gap-8 w-fit text-lg">
       <p>
         Our emblem, which is worn by all full members of the fraternity, is rich
         with symbolic meaning about our origins. For example, the fraternity

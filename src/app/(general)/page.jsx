@@ -1,15 +1,14 @@
 import Translation from "@/components/Translation";
 import Image from "next/image";
 import Navigare from "@/components/Navigare";
-import Carousel from "@/components/Carousel";
 import HomeInfo from "@/components/HomeInfo";
 import StripeDivider from "@/components/StripeDivider";
 import Instagram from "@/components/Instagram";
 
 export default function Home() {
   return (
-    <main className="h-fit w-full flex flex-col items-center mb-24">
-      <div className="flex flex-col relative items-center justify-center">
+    <main className="h-fit w-full flex flex-col items-center">
+      <div className="flex flex-col w-full relative items-center justify-center">
         <Image
           src="/chm_kermo.png"
           alt="ChM Kermo"
@@ -29,18 +28,23 @@ export default function Home() {
         />
       </div>
       <StripeDivider />
-      <div className="flex flex-col lg:flex-row w-full justify-between gap-8">
-        <Image
-          src="/2023_MVT.jpg"
-          className="object-cover w-full h-auto"
-          alt="MVT 2023"
-          width={6000}
-          height={4000}
-        />
-        <Navigare />
+      <div className="bg-blue-900 flex flex-col lg:flex-row w-full justify-between">
+        <div>
+          <Image
+            src="/2023_MVT.jpg"
+            className="object-cover h-auto w-full"
+            alt="MVT 2023"
+            width={6000}
+            height={4000}
+          />
+        </div>
+        <div className="p-8 lg:p-12">
+          <Navigare />
+        </div>
       </div>
+
       <StripeDivider />
-      <div className="flex flex-col lg:flex-row w-full justify-between gap-8">
+      <div className="bg-blue-900 flex flex-col lg:flex-row w-full justify-between">
         <Image
           src="/2023_rada_chm.jpg"
           className="object-cover w-full h-auto lg:hidden"
@@ -48,19 +52,32 @@ export default function Home() {
           width={4032}
           height={3024}
         />
-        <HomeInfo />
-        <Image
-          src="/2023_rada_chm.jpg"
-          className="object-cover w-full h-auto hidden lg:flex"
-          alt="ChM Rada 2023"
-          width={4032}
-          height={3024}
-        />
+        <div className="p-8 lg:p-12">
+          <HomeInfo />
+        </div>
+        <div>
+          <Image
+            src="/2023_rada_chm.jpg"
+            className="object-cover h-auto w-fit hidden lg:flex"
+            alt="ChM Rada 2023"
+            width={4032}
+            height={3024}
+          />
+        </div>
       </div>
       <StripeDivider />
       <Instagram />
-      <p>Leadership Carousel</p>
-      <p>Contact Email Link</p>
+      <div className="flex flex-col gap-8 py-12 text-3xl">
+        <p>Leadership Carousel</p>
+        <p>Contact Email Link</p>
+      </div>
+      <Image
+        src="/2023_rada.jpeg"
+        className="w-full h-auto"
+        alt="Velyka Rada 2023"
+        width={2962}
+        height={1496}
+      />
     </main>
   );
 }
