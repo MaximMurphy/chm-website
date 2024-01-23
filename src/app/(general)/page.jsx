@@ -4,6 +4,7 @@ import Navigare from "@/components/Navigare";
 import Carousel from "@/components/Carousel";
 import HomeInfo from "@/components/HomeInfo";
 import StripeDivider from "@/components/StripeDivider";
+import Instagram from "@/components/Instagram";
 
 export default function Home() {
   return (
@@ -57,7 +58,7 @@ export default function Home() {
         />
       </div>
       <StripeDivider />
-      <p>Instagram Feed</p>
+      <Instagram />
       <p>Leadership Carousel</p>
       <p>Contact Email Link</p>
     </main>
