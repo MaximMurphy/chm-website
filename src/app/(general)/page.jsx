@@ -3,10 +3,11 @@ import Image from "next/image";
 import Navigare from "@/components/Navigare";
 import Carousel from "@/components/Carousel";
 import HomeInfo from "@/components/HomeInfo";
+import StripeDivider from "@/components/StripeDivider";
 
 export default function Home() {
   return (
-    <main className="h-fit w-full flex flex-col items-center gap-12 mb-24">
+    <main className="h-fit w-full flex flex-col items-center mb-24">
       <div className="flex flex-col relative items-center justify-center">
         <Image
           src="/chm_kermo.png"
@@ -26,19 +27,38 @@ export default function Home() {
           className="h-[36rem] md:h-[40rem] lg:h-[45rem] object-cover relative brightness-90"
         />
       </div>
-      <div className="flex flex-col lg:flex-row w-full items-center lg:items-start justify-between gap-8 px-8">
-        <Carousel />
-        <div className="flex flex-col w-fit gap-8">
-          <h1 className="text-5xl">
-            <Translation translationKey="home_greeting" />
-          </h1>
-          <Navigare />
-        </div>
+      <StripeDivider />
+      <div className="flex flex-col lg:flex-row w-full justify-between gap-8">
+        <Image
+          src="/2023_MVT.jpg"
+          className="object-cover w-full h-auto"
+          alt="MVT 2023"
+          width={6000}
+          height={4000}
+        />
+        <Navigare />
       </div>
-      <HomeInfo />
+      <StripeDivider />
+      <div className="flex flex-col lg:flex-row w-full justify-between gap-8">
+        <Image
+          src="/2023_rada_chm.jpg"
+          className="object-cover w-full h-auto lg:hidden"
+          alt="ChM Rada 2023"
+          width={4032}
+          height={3024}
+        />
+        <HomeInfo />
+        <Image
+          src="/2023_rada_chm.jpg"
+          className="object-cover w-full h-auto hidden lg:flex"
+          alt="ChM Rada 2023"
+          width={4032}
+          height={3024}
+        />
+      </div>
+      <StripeDivider />
       <p>Instagram Feed</p>
       <p>Leadership Carousel</p>
-      <p>Water Animation?</p>
       <p>Contact Email Link</p>
     </main>
   );

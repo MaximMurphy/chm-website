@@ -1,8 +1,10 @@
 export default function Navigare() {
   return (
-    <section className="flex flex-col gap-12">
-      <h1 className="text-4xl">Navigare Necesse Est – Vivere Non</h1>
-      <div className="flex flex-col gap-8 text-lg">
+    <section className="flex flex-col gap-6 w-fit lg:w-[50rem] py-4 lg:py-12 px-8">
+      <h1 className="text-3xl lg:text-4xl">
+        Navigare Necesse Est – Vivere Non
+      </h1>
+      <div className="flex flex-col gap-4 text-lg">
         <p>
           Translation: an unnavigated life is not worth living. This is the
           motto of the Chornomortsi fraternity. We are a division of older
