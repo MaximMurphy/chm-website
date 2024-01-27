@@ -67,9 +67,14 @@ export default function Home() {
       </div>
       <StripeDivider />
       <Instagram />
-      <div className="flex flex-col gap-8 py-12 text-3xl">
+      <div className="flex flex-col gap-8 py-12 text-3xl text-center">
         <p>Leadership Carousel</p>
-        <p>Contact Email Link</p>
+        <p>
+          {" Contact us at: "}
+          <a className="cursor-pointer" href="mailto:chornomortsi@gmail.com">
+            chornomortsi@gmail.com
+          </a>
+        </p>
       </div>
       <Image
         src="/2023_rada.jpeg"

@@ -16,13 +16,24 @@ export default function Footer() {
         quality={90}
         className="h-24 lg:h-48 w-auto"
       />
-      <div className="flex flex-col gap-6 text-sm lg:text-base">
+      <div className="flex flex-col gap-4 text-sm lg:text-base">
         <span className="font-bold">
           <Translation translationKey="footer_title" /> - 25-ий Курінь
         </span>
-        <a className="cursor-pointer" href="mailto:chornomortsi@gmail.com">
-          email: chornomortsi@gmail.com
-        </a>
+        <div className="flex flex-col gap-1">
+          <p>
+            {" Email: "}
+            <a className="cursor-pointer" href="mailto:chornomortsi@gmail.com">
+              chornomortsi@gmail.com
+            </a>
+          </p>
+          <p>
+            {" Morski Tabir: "}
+            <a className="cursor-pointer" href="mailto:chornomortsi@gmail.com">
+              chmlomt@gmail.com
+            </a>
+          </p>
+        </div>
         <p>Copyright © 2024 - All right reserved</p>
         <nav className="flex flex-row items-center justify-between px-16">
           <Link

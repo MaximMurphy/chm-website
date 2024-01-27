@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function lubko() {
   return (
-    <section className="bg-slate-900 h-full w-full flex flex-col items-center px-6 py-16 md:p-8 lg:p-12 gap-8">
+    <section className="bg-slate-900 h-full w-full flex flex-col items-center px-8 py-16 md:p-8 lg:p-12 gap-12">
       <h1 className="text-5xl text-center">
         <Translation translationKey="lubko_title" />
       </h1>
@@ -16,20 +16,21 @@ export default function lubko() {
         quality={100}
         className="w-auto h-64 md:h-72 lg:h-80"
       />
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col items-center lg:px-64 gap-8">
         <div className="text-lg">
           <Translation translationKey="lubko_p1" />
         </div>
         <div className="text-lg">
           <Translation translationKey="lubko_p2" />
         </div>
-        <div className="text-lg">
+        <div className="text-lg font-bold">
           <Translation translationKey="lubko_p3" />
         </div>
-        <div className="text-sm">
-          <Translation translationKey="lubko_p4" />
-        </div>
       </div>
+      <div className="text-sm lg:px-72">
+        <Translation translationKey="lubko_p4" />
+      </div>
+
       <div className="flex gap-8">
         <Link
           href="/Спомини-Пана-Любка-1.pdf"
