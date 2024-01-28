@@ -7,7 +7,7 @@ import Translation from "./Translation";
 
 export default function Footer() {
   return (
-    <footer className="w-full flex flex-col lg:flex-row justify-between items-center px-8 py-20 lg:px-80 lg:py-24 gap-8 bg-blue-900">
+    <footer className="w-full flex flex-col lg:flex-row justify-between items-center px-2 py-20 lg:px-80 lg:py-24 gap-8 bg-blue-950">
       <Image
         src="/chm_logo.png"
         alt="ChM Logo"
@@ -35,20 +35,28 @@ export default function Footer() {
           </p>
         </div>
         <p>Copyright © 2024 - All right reserved</p>
-        <nav className="flex flex-row items-center justify-between px-16">
+        <nav className="flex flex-row items-center justify-between px-12">
           <Link
             href="https://www.instagram.com/chm_usa/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Icon icon="mdi:instagram" height="48" />
+            <Icon
+              icon="mdi:instagram"
+              height="48"
+              className="h-8 w-auto lg:h-fit"
+            />
           </Link>
           <Link
             href="https://www.youtube.com/@STPChornomortsi"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Icon icon="mdi:youtube" height="48" />
+            <Icon
+              icon="mdi:youtube"
+              height="48"
+              className="h-8 w-auto lg:h-fit"
+            />
           </Link>
         </nav>
       </div>

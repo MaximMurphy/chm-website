@@ -28,7 +28,7 @@ export default function Home() {
         />
       </div>
       <StripeDivider />
-      <div className="bg-blue-900 flex flex-col lg:flex-row w-full justify-between">
+      <div className="bg-blue-950 flex flex-col lg:flex-row w-full justify-between">
         <div>
           <Image
             src="/2023_MVT.jpg"
@@ -44,7 +44,7 @@ export default function Home() {
       </div>
 
       <StripeDivider />
-      <div className="bg-blue-900 flex flex-col lg:flex-row w-full justify-between">
+      <div className="bg-blue-950 flex flex-col lg:flex-row w-full justify-between">
         <Image
           src="/2023_rada_chm.jpg"
           className="object-cover w-full h-auto lg:hidden"

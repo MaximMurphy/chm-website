@@ -12,14 +12,13 @@ export default function MTInfo() {
           height={1536}
           className="h-80 lg:h-[30rem] w-auto"
         />
-        <p>
-          MT will take place August 3rd-10th 2024. There will be more
-          information soon.
+        <p className="text-lg lg:text-xl">
+          MT will take place August 3rd-10th. There will be more information
+          soon. We hope you can all make it!
         </p>
       </div>
       <p>
-        If you have any questions or comments you may send us an e-mail:
-        chmlomt@gmail.com
+        If you have any questions, you may send us an e-mail: chmlomt@gmail.com
       </p>
     </div>
   );

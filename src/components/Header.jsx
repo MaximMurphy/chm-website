@@ -8,7 +8,7 @@ import NavDropdown from "@/components/NavDropdown";
 
 export default function Header() {
   return (
-    <div className="navbar bg-blue-900/10 border-b-2 border-blue-900/90 z-50 top-0 sticky p-4 backdrop-blur-md">
+    <div className="navbar bg-blue-900/10 border-b-2 border-blue-950/30 z-50 top-0 sticky p-4 backdrop-blur-md">
       <div className="navbar-start">
         <details className="dropdown">
           <summary className="list-none">
