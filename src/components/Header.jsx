@@ -44,11 +44,6 @@ export default function Header() {
                 Морський Табір
               </Link>
             </li>
-            <li>
-              <Link href="/" className="text-lg">
-                Documents
-              </Link>
-            </li>
           </ul>
         </details>
 

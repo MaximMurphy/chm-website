@@ -10,7 +10,7 @@ export default function LoginPage() {
         width="862"
         height="652"
         alt="Image of Sailors Waiting"
-        className="w-96 h-auto"
+        className="w-64 lg:w-96 h-auto"
       />
     </div>
   );

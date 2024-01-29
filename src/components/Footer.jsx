@@ -7,7 +7,7 @@ import Translation from "./Translation";
 
 export default function Footer() {
   return (
-    <footer className="w-full flex flex-col lg:flex-row justify-between items-center px-2 py-20 lg:px-80 lg:py-24 gap-8 bg-blue-950">
+    <footer className="w-full flex flex-col lg:flex-row justify-between items-center px-2 py-12 lg:px-80 lg:py-24 gap-8 bg-blue-950">
       <Image
         src="/chm_logo.png"
         alt="ChM Logo"

@@ -67,12 +67,7 @@ export default function Home() {
       </div>
       <StripeDivider />
       <Instagram />
-      <p className="pt-20 pb-16 text-xl lg:text-2xl text-center">
-        {" Contact us at: "}
-        <a className="cursor-pointer" href="mailto:chornomortsi@gmail.com">
-          chornomortsi@gmail.com
-        </a>
-      </p>
+      <StripeDivider />
       <Image
         src="/2023_rada.jpeg"
         className="w-full h-auto"
