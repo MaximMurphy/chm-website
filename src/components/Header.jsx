@@ -84,7 +84,10 @@ export default function Header() {
       </div>
       <div className="navbar-end flex flex-row">
         <LanguageSelector />
-        <p className="btn btn-ghost text-base">Login</p>
+
+        <Link href="/login" className="btn btn-ghost text-base">
+          Login
+        </Link>
       </div>
     </div>
   );
