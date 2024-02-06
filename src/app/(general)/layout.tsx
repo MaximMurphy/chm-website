@@ -4,6 +4,7 @@ import "../globals.css";
 import Header from "@/components/Header";
 import Providers from "./Providers";
 import Footer from "@/components/Footer";
+import { ClerkProvider } from "@clerk/nextjs";
 
 const font = Noto_Sans({ subsets: ["latin", "cyrillic"] });
 
@@ -18,15 +19,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html>
-      <link rel="icon" href="/favicon.ico" sizes="any" />
-      <body className={font.className}>
-        <Providers>
-          <Header />
-          {children}
-          <Footer />
-        </Providers>
-      </body>
-    </html>
+    <ClerkProvider
+      appearance={{
+        elements: {
+          footer: "hidden",
+        },
+      }}
+    >
+      <html>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <body className={font.className}>
+          <Providers>
+            <Header />
+            {children}
+            <Footer />
+          </Providers>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }

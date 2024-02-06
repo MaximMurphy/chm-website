@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@clerk/nextjs": "^4.29.6",
     "flag-icons": "^7.1.0",
     "flowbite-react": "^0.7.2",
     "next": "14.0.4",

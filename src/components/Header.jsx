@@ -5,8 +5,11 @@ import Link from "next/link";
 import Translation from "@/components/Translation";
 import LanguageSelector from "@/components/LanguageSelector";
 import NavDropdown from "@/components/NavDropdown";
+import { useUser, UserButton } from "@clerk/nextjs";
 
 export default function Header() {
+  const { isSignedIn } = useUser();
+
   return (
     <div className="navbar bg-blue-900/10 border-b-2 border-blue-950/30 z-50 top-0 sticky p-4 backdrop-blur-md">
       <div className="navbar-start">
@@ -44,6 +47,15 @@ export default function Header() {
                 Морський Табір
               </Link>
             </li>
+            {isSignedIn ? (
+              <li>
+                <Link href="/pratsi" className="text-lg">
+                  <Translation translationKey="pratsi" />
+                </Link>
+              </li>
+            ) : (
+              <></>
+            )}
           </ul>
         </details>
 
@@ -75,14 +87,30 @@ export default function Header() {
               Морський Табір
             </Link>
           </li>
+
+          {isSignedIn ? (
+            <li>
+              <Link href="/pratsi" className="text-base">
+                <Translation translationKey="pratsi" />
+              </Link>
+            </li>
+          ) : (
+            <></>
+          )}
         </ul>
       </div>
       <div className="navbar-end flex flex-row">
         <LanguageSelector />
 
-        <Link href="/login" className="btn btn-ghost text-base">
-          Login
-        </Link>
+        {isSignedIn ? (
+          <div className="flex pl-4">
+            <UserButton />
+          </div>
+        ) : (
+          <Link href="/login" className="btn btn-ghost text-base">
+            Login
+          </Link>
+        )}
       </div>
     </div>
   );

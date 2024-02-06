@@ -34,7 +34,7 @@ export default function Footer() {
             </a>
           </p>
         </div>
-        <p>Copyright © 2024 - All right reserved</p>
+        <p>Copyright © 2024 - All rights reserved</p>
         <nav className="flex flex-row items-center justify-between px-12">
           <Link
             href="https://www.instagram.com/chm_usa/"
