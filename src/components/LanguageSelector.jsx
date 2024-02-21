@@ -19,7 +19,11 @@ export default function LanguageSelector() {
     <details id="details" className="dropdown dropdown-bottom dropdown-end">
       <summary className="list-none">
         <div tabIndex={0} role="button" className="">
-          <Icon icon="clarity:language-line" height="36" />
+          {lang === "en" ? (
+            <Icon icon="twemoji:flag-united-states" height="32" />
+          ) : (
+            <Icon icon="twemoji:flag-ukraine" height="32" />
+          )}
         </div>
       </summary>
       <ul
@@ -27,7 +31,7 @@ export default function LanguageSelector() {
         className="dropdown-content bg-white/90 z-[1] menu p-2 shadow rounded-box w-fit"
       >
         <li>
-          <button onClick={() => handleSelect("us")}>
+          <button onClick={() => handleSelect("en")}>
             <Icon icon="circle-flags:us" height="24" />
 
             <p className="text-black">English</p>

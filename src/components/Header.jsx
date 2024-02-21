@@ -104,7 +104,7 @@ export default function Header() {
 
         {isSignedIn ? (
           <div className="flex pl-4">
-            <UserButton />
+            <UserButton className="w-12 h-12" />
           </div>
         ) : (
           <Link href="/login" className="btn btn-ghost text-base">
