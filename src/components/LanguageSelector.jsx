@@ -11,7 +11,7 @@ export default function LanguageSelector() {
 
   const handleSelect = (selectedLang) => {
     // Update the context value with the selected language
-    details.removeAttribute("open");
+    //details.removeAttribute("open");
     setLang(selectedLang);
   };
 

@@ -5,6 +5,7 @@ import Link from "next/link";
 import Translation from "@/components/Translation";
 import LanguageSelector from "@/components/LanguageSelector";
 import NavDropdown from "@/components/NavDropdown";
+import DocumentDropdown from "@/components/DocumentDropdown";
 import { useUser, UserButton } from "@clerk/nextjs";
 
 export default function Header() {
@@ -34,7 +35,7 @@ export default function Header() {
           </summary>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-4 bg-white/90 text-black shadow bg-base-100 rounded-box w-fit text-lg"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-4 bg-white text-black shadow rounded-box w-fit text-lg"
           >
             <li>
               <Translation translationKey="header_about" />
@@ -47,15 +48,7 @@ export default function Header() {
                 Морський Табір
               </Link>
             </li>
-            {isSignedIn ? (
-              <li>
-                <Link href="/pratsi" className="text-lg">
-                  <Translation translationKey="pratsi" />
-                </Link>
-              </li>
-            ) : (
-              <></>
-            )}
+            {isSignedIn ? <DocumentDropdown /> : <></>}
           </ul>
         </details>
 
@@ -73,30 +66,22 @@ export default function Header() {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 text-base">
           <li>
-            <details>
-              <summary className="list-none">
+            <details id="details">
+              <summary className="list-none hover:text-gray-300">
                 <Translation translationKey="header_about" />
               </summary>
-              <ul className="p-2 bg-white/90 text-black">
+              <ul tabIndex={0} className="p-2 bg-white text-black">
                 <NavDropdown />
               </ul>
             </details>
           </li>
           <li>
-            <Link href="/mt" className="text-base">
+            <Link href="/mt" className="text-base hover:text-gray-300">
               Морський Табір
             </Link>
           </li>
 
-          {isSignedIn ? (
-            <li>
-              <Link href="/pratsi" className="text-base">
-                <Translation translationKey="pratsi" />
-              </Link>
-            </li>
-          ) : (
-            <></>
-          )}
+          {isSignedIn ? <DocumentDropdown /> : <></>}
         </ul>
       </div>
       <div className="navbar-end flex flex-row">
