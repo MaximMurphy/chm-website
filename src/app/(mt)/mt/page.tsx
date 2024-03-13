@@ -37,7 +37,7 @@ export default function MT() {
       </section>
       <section
         id="info"
-        className="bg-slate-900 h-full w-full py-12 px-4 lg:p-20"
+        className="bg-slate-900 h-fit w-full py-12 px-4 lg:p-20"
       >
         <MTInfo />
       </section>
