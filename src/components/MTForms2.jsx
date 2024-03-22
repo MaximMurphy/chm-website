@@ -40,15 +40,7 @@ export default function MTForms2() {
                 (U1) MT - Yunatstvo Form
               </Link>
             </li>
-            <li>
-              <Link
-                href="/MT_Uchasnyk_Forms/U2) Medical Form.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                (U2) Medical Form
-              </Link>
-            </li>
+
             <li>
               <Link
                 href="/MT_Uchasnyk_Forms/U3) Campers Code of Conduct Bilingual.pdf"
@@ -135,15 +127,7 @@ export default function MTForms2() {
                 (B1) MT - Bulava Form
               </Link>
             </li>
-            <li>
-              <Link
-                href="/MT_Bulava_Forms/B2) Medical Form.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                (B2) Medical Form
-              </Link>
-            </li>
+
             <li>
               <Link
                 href="/MT_Bulava_Forms/B3) Bulava Code of Conduct.pdf"
