@@ -24,7 +24,7 @@ export default function MTForms2() {
             {/* Sidebar content here */}
             <li>
               <Link
-                href="/MT_Uchasnyk_Forms/Yunatstvo Application.zip"
+                href="/MT_Uchasnyk_Forms/Yunatstvo Forms.zip"
                 target="_blank"
                 rel="noopener noreferrer"
               >
