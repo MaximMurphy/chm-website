@@ -19,6 +19,13 @@ export default function MTInfo() {
           <p className="text-lg lg:text-xl">
             Де: West Branch State Park, Ravenna OH
           </p>
+          <Link
+            href="/MT_Uchasnyk_Forms/Виряд MT 24.pdf"
+            target="_blank"
+            className="drawer-button btn btn-primary w-48"
+          >
+            Виряд (Packing List)
+          </Link>
           <MTForms2 />
         </div>
       </div>
