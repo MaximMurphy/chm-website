@@ -44,7 +44,7 @@ export default function MTInfo() {
           </p>
 
           <Link
-            href="/MT_Uchasnyk_Forms/Виряд MT 24.pdf"
+            href="/MT_Uchasnyk_Forms/Виряд MT 24-1.pdf"
             target="_blank"
             className="drawer-button btn btn-primary w-48"
           >
