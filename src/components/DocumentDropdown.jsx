@@ -16,6 +16,16 @@ export default function DocumentDropdown() {
           </li>
           <li>
             <Link
+              href="https://drive.google.com/drive/folders/1qWiGFtjCUOGwIHThEXi1u_VF3HtKY6CR?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-lg"
+            >
+              <Translation translationKey="orions" />
+            </Link>
+          </li>
+          <li>
+            <Link
               href="/Жовта Книга (2024.03).pdf"
               target="_blank"
               rel="noopener noreferrer"
