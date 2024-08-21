@@ -1,5 +1,8 @@
 New Home Site for Ukrainian Scouting Organization, Plast Chornomortsi. Built with Next.js, TailwindCss, and Clerk Auth.
 
+## Live Site
+https://chornomortsi.vercel.app/
+
 # Features
 - User Authentication setup with Clerk
 - Bilingual web app that displays language (English or Ukrainian) based on selection.
@@ -14,6 +17,3 @@ New Home Site for Ukrainian Scouting Organization, Plast Chornomortsi. Built wit
 - Set up database to store members' rank, city, and year joined.
 - Create Members page displaying each member and their rank.
 - Add remaining archived files from old site to password protected Documents tab.
-
-## Currently deployed on Vercel as "development" site
-https://chornomortsi.vercel.app/
